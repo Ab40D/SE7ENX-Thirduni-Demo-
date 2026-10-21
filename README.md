@@ -191,7 +191,52 @@ If development continues, the planned priorities are:
 5. Research a secure, local-first integration architecture for selected building-automation technologies.
 6. Collect feedback from the Thirduni Community and building-automation practitioners to guide future development.
 
-Any future connection to physical devices will require dedicated integration work, explicit configuration, testing, and appropriate safety controls.
+Any future connection to physical devices will require dedicated integration work, explicit configuration, testing, and 
+
+appropriate safety controls.
+
+
+
+## Live Demos — Try SE7ENX in Your Browser
+
+SE7ENX is available through the following hosted demonstrations. You can open them directly in your browser without cloning the repository.
+
+### 1. SE7ENX — Vercel Demo
+
+**[Open SE7ENX on Vercel](https://se-7-enx-thirduni-demo.vercel.app/)**
+
+The first hosted entry point for exploring the project. Some interactive features, particularly camera-dependent gesture recognition, may work better when running the application locally.
+
+### 2. SE7ENX — Railway Demo
+
+**[Launch the SE7ENX Experience](https://se7enx-thirduni-demo-production.up.railway.app/)**
+
+For the recommended hosted experience, open this version in the latest version of **Google Chrome on a desktop or laptop**. Where supported, try voice commands and hand gestures to explore the interaction concept.
+
+When prompted, allow camera and microphone access if you want to test these features. If permission was previously blocked, update the site's permissions in Chrome and reload the page.
+
+For the best opportunity to test camera-based interaction, use the local setup described in [Run Locally](#run-locally). Local execution can help avoid some deployment-related limitations, although browser permissions and hardware compatibility still apply.
+
+### 3. Community Demo — SE7ENXHS
+
+**[Open the SE7ENXHS Demo](https://se7enxhs-production.up.railway.app/)**
+
+This is a separate demonstration created by a friend, showcasing another experience related to the SE7ENX concept. It is provided as an additional community reference and is distinct from the main SE7ENX demo.
+
+### Recommended Testing Steps
+
+1. Start with the [Railway demo](https://se7enx-thirduni-demo-production.up.railway.app/).
+2. Use an up-to-date version of Google Chrome.
+3. Explore the room and interact with the virtual devices.
+4. Grant camera and microphone permissions when requested.
+5. Test voice commands and hand gestures where supported.
+6. If camera-based interaction does not work reliably online, follow the local installation instructions above.
+7. Explore the [Vercel version](https://se-7-enx-thirduni-demo.vercel.app/) and the [SE7ENXHS community demo](https://se7enxhs-production.up.railway.app/) for comparison.
+
+**Hosting note:** These demos run on third-party hosting services and may be affected by resource limits, availability, or free-tier restrictions. Continued public access depends on the hosting providers' policies and available resources. If a hosted version is unavailable, use the repository to run the project locally.
+
+**Privacy and safety:** Camera and microphone access is controlled by your browser. Only grant permissions when you intend to test those features. The current prototype is experimental; do not use it to control safety-critical systems or assume that simulated device states represent real physical devices.
+
 
 ## Creator
 
