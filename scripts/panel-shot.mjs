@@ -1,0 +1,13 @@
+import { chromium } from 'playwright';
+const URL = process.env.APP_URL || 'http://localhost:5173/';
+const browser = await chromium.launch({ args: ['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'] });
+const page = await browser.newPage({ viewport: { width: 1440, height: 960 } });
+const errors = [];
+page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text().slice(0,120)); });
+await page.goto(URL, { waitUntil: 'networkidle' });
+await page.getByTestId('intro-skip').click();
+await page.getByTestId('mode-gesture').click();
+await page.waitForTimeout(600);
+await page.locator('[data-testid="gesture-control"]').screenshot({ path: '/home/user/shots/14-gesture-idle.png' });
+console.log('CONSOLE ERRORS:', JSON.stringify(errors));
+await browser.close();

@@ -1,0 +1,17 @@
+
+*.local
+*.log
+*.tsbuildinfo
+.DS_Store
+.npm
+.playwright-browsers
+.vite
+blob-report
+coverage
+dist
+dist-ssr
+node_modules
+playwright-report
+playwright/.cache
+shots
+test-results
